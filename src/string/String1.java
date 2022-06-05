@@ -7,11 +7,14 @@ public class String1 {
 	String str1="hello"; // string literal
 	String str2= new String("stringobject");  // object of string
 	
-	char[] arr=str1.toCharArray();
-	for(int i=0;i<arr.length;i++) {
+	
+	
+	char[] arr=str1.toCharArray(); // h,o,l,l,o
+	for(int i=0;i<arr.length;i++) { // 0-4
 		System.out.println(arr[i]);
 	}
 	
+
 	int length=str1.length();
 	System.out.println("string length"+length);
 	
@@ -19,6 +22,9 @@ public class String1 {
 	char[] ch={'j','a','v','a','t','p','o','i','n','t'};  
 	String s=new String(ch); 
 	System.out.println("string char array: "+s);
+	
+	
+	int[] arr1= {1,2,3,5,6};
 	
 	
 	

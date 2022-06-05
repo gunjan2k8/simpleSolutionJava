@@ -1,23 +1,25 @@
 package setpackage;
 
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
+import java.util.TreeSet;
 
-public class HashSet1 {
+public class TreeSet1 {
 	
-	// insertion order not maintained , only store unique elements
+	
+	// // Elements get stored in default natural
+    // Sorting Order(Ascending)
 	public static void main(String args[]){  
-	
-		    Set<String> set=new HashSet<String>();  
+		  
+		    Set<String> set=new TreeSet<String>();  
 		           set.add("One");    
 		           set.add("Two");    
 		           set.add("Three");   
 		           set.add("Four");  
-		           set.add("Five");  
+		           set.add("Five"); 
 		           set.add("One");  
-		           set.add(null);
-		           set.add(null);
+		           
+		           System.out.println(set); 
 		           
 		           Iterator<String> i=set.iterator();  
 		           while(i.hasNext())  
@@ -28,10 +30,9 @@ public class HashSet1 {
 		           
 		           
 		 		  for(String str: set) {
-		 			   System.out.println("through for enchanced loop :"+str); 
+		 			   System.out.println("through for enchanced loop : "+str); 
 		 			  
 		 		  }
 		 }  
-		}  
 
-
+}

@@ -2,11 +2,10 @@ package interfaces;
 
 interface Car {  // its not a class and it does not have any method with implementation
 	
-	int a=10; // by default public constant static 
+	 int a=10; //  public constant static final
 	
-	void acceleartion(); // by default public and abstract
+	void acceleartion(); //  public and abstract(no definition)
 	
 	
 }
 
-	

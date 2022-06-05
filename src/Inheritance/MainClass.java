@@ -5,23 +5,30 @@ public class MainClass {
 	public static void main(String args[]) {
 		
 		
-		Animal animal= new Animal();
-		animal.name="animal";
-		animal.eat();
-		//animal.dogeat();// will throw error because dogeat method not in Animal class
+		Parent parent= new Parent();
+		parent.name="mother";
+		parent.eat();
+		parent.walk();
 		
 		
-		Dog dg= new Dog(); // due to inheritance it can can access all methods of animal
-		dg.name="tommy";
-		dg.eat();
-		dg.dogeat();
+		//parent.play();// will throw error because play method not in Parent class
+	
 		
-		Animal anidog= new Dog();
-		anidog.name="animal dog";
-		anidog.eat();
-		//anidog.dogeat();// will throw error because dogeat method not in Animal class
+	Child child= new Child(); // due to inheritance it can can access all methods of animal
+	child.name="tommy";
+	child.eat();
+	child.walk();
+	child.play();
+	
+	
+	
+		Parent child1= new Child();
+		child1.name="animal dog";
+		child1.eat();
+		//child1.play();// will throw error because play method not in Parent class
+		child1.walk(); // child class walk will be executed
 		
-	//	Dog anidog= new Animal(); // not possible because a parent cannot be of child type
+    //Child child2= new Parent(); // not possible because a parent cannot be of child type
 		
 	}
 

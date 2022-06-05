@@ -6,7 +6,7 @@ import java.util.Set;
 
 public class LinkedHashSet1 {
 	
-	// order maintained and store unique elements
+	// insertion order maintained and store unique elements
 	public static void main(String args[]){  
 		  
 		    Set<String> set=new LinkedHashSet<String>();  

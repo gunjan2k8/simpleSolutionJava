@@ -14,12 +14,20 @@ public class LinkedList1 {
 		  list.add("gunjan");//Adding object in linkedlist    
 		  list.add("test1");    
 		  list.add("test2");    
-		  list.add("object1");    
+		  list.add("object1"); 
+	
+		  
 		  //Traversing list through Iterator  
 		  Iterator itr=list.iterator();//getting the Iterator  
 		  while(itr.hasNext()){//check if iterator has the elements  
 		   System.out.println(itr.next());//printing the element and move to next  
 		  }  
+		  
+		  // for enchanced loop
+		  for(String str: list) {
+			   System.out.println("through for enchanced loop :"+str);//printing the element and move to next  
+			  
+		  }
 		  
 	}
 

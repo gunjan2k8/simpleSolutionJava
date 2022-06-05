@@ -14,6 +14,14 @@ class BaseClass {    // method signature and return should be same
 		System.out.println("BaseClass add method called");
 
 	}
+	
+	 int sum(int a , int b) {
+		 int c=a+b;
+
+			System.out.println("BaseClass sum method called");
+			return c;
+
+		}
 
 
 }
@@ -31,10 +39,21 @@ public class Overridepolymorphism extends BaseClass {
 
 	}
 	
+	int sum(int a , int b) {
+		
+		int c=a-b;
+		return c;
+		
+	}
+
+	
+	
+	
 public static void main(String args[]) {
 		
 	Overridepolymorphism obj1= new Overridepolymorphism();
 		obj1.sum(); //overridepolymorphism sum method called
+		obj1.divide();
 		
 
 		BaseClass bc= new BaseClass();
@@ -44,7 +63,7 @@ public static void main(String args[]) {
 		BaseClass bc1= new Overridepolymorphism();
 		bc1.sum(); //overridepolymorphism sum method called
 		bc1.add(); //BaseClass add method called
-		bc1.divide();// throw an error as method not in BaseClass 
+		//bc1.divide();// throw an error as method not in BaseClass 
 		
 
 	}
